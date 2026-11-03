@@ -2,6 +2,8 @@
 
 ## Current status (2026-11-03)
 - Version 1 is built, tested and published at https://officialmtxstudios.github.io/gym-tracker/
+  (repo: https://github.com/officialmtxstudios/gym-tracker, public; GitHub Pages deploys from the
+  Actions workflow on every push to `main` – first deploy passed and the live site was checked).
 - Next step: Matt opens the link in Safari on his iPhone → Share → **Add to Home Screen**, then logs a
   real session. Collect any changes he wants after using it at the gym.
 
@@ -57,3 +59,5 @@ Chosen over a native iPhone app because that needs the $99/yr Apple Developer Pr
 - Rest timer can't buzz a locked phone (web app limitation); it beeps if the app is open.
 - No automatic Mac sync – Mac views data via Restore from backup.
 - If Safari's website data is cleared, data is lost – the app nags for a backup every 7 days.
+- GitHub Actions warns that checkout/setup-node/pages actions v4 run on deprecated Node 20; bump
+  them to newer major versions at some point (works fine today).
